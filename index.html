@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BookHub</title>
+		<meta charset="UTF-8">
+
+		<!-- CSS files -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/materialize.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery.raty.css">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		
+
+	</head>
+	<body>
+
+		<section>
+			<nav>
+			    <div class="nav-wrapper">
+			    	<img src="images/book.png">
+			    	<h1 class="logo">BookHub<h1>	       	
+			    </div>
+
+			  </nav>
+
+			<div class="container">
+				
+					<div class="col-md-6"></div>
+					<div class="col-md-6">
+						<div class="row total-stats">
+							<div class="col-md-6"><strong>Total Books: </strong><span id="total-books">0</span></div>
+							<div class="col-md-6"><strong>Total Bookmarks: </strong><span id="total-bookmarks">0</span></div>
+
+							 <span class='new badge'>Show all Books</span>
+						</div>
+					</div>
+				
+			</div>
+		</section>
+
+		<section>
+			
+				<div class="col-md-5" style="border-right: 1px solid;">
+					<div class="col-md-8">
+						<!-- <div class="right-inner-addon"> -->
+					        <!-- <i class="icon-search"></i> -->
+					        <input id="search" type="search"
+					               class="form-control" 
+					               placeholder="Search by author, name, id, ISBN,etc., " />
+					    <!-- </div> -->
+					</div>
+					<div class="col-md-4">
+						<div id="all-bookmarks" class="bookmark-btn"><i id="bookmark-icon" class="material-icons left">bookmark</i>List bookmarks</div>
+					</div>
+					<br>
+					<div style="clear: left">
+						 <ul id="book-title-list" class="collection">
+					      
+					    </ul>
+					    <div class="sort-order">
+					    	<ul id="sort" class="dropdown-content">
+							    <li><a href="#!">Ascending</a></li>
+							    <li><a href="#!">Descending</a></li>
+						  	</ul>
+							  <a class="btn dropdown-button" href="#!" data-activates="sort">Sort By<i class="mdi-navigation-arrow-drop-down right"></i></a>
+					    	<form action="#" style="display: inline-block">
+						      <input class="with-gap" name="group" type="radio" id="sort-price" />
+						      <label for="sort-price">Price</label>
+						    
+						      <input class="with-gap" name="group" type="radio" id="sort-rating"  />
+						      <label for="sort-rating">Rating</label>
+
+						     
+						  </form>
+					    </div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div>
+						<div class="col-md-6"></div>
+						<div class="col-md-6"></div>	
+					</div>
+					<div class="book-desc-container">
+						<div class="col-md-6" style="text-align: center">
+							<img class="responsive-img" id="book-cover" src="">
+						</div>
+						<div  class="col-md-6">
+							<!-- <div>
+								<strong>Details</strong>
+								<span>Publisher: </span><span id="book-publisher"></span>
+								<span>ISBN: </span><span id="book-isbn"></span>
+								<span>Binding: </span><span id="book-binding"></span>
+								<span>Rating: </span><span id="book-rating"></span>
+								
+							</div> -->
+
+							<table style="border:1px solid">
+								 <tbody>
+								<tr><td colspan="2" class="title-header">Details</td></tr>
+								<tr><td><span class="sub-title">Publisher: </span></td><td><span id="book-publisher"></span></td></tr>
+								<tr><td><span class="sub-title">ISBN: </span><td><span id="book-isbn"></span></td></td></tr>
+								<tr><td><span class="sub-title">Binding: </span><td><span id="book-binding"></span></td></td></tr>
+								<tr><td><span class="sub-title">Rating: </span><td><div id="book-rating"></div></td></td></tr>
+							</tbody>
+							</table>
+						</div>
+						<div style="clear: left;">
+							<span style="font-weight: 700; font-size: 24px;">Description</span>
+							<p id="book-desc"></p>
+							<a id="share-btn" class="waves-effect waves-light btn"><i class="material-icons left">share</i>share</a>
+							<a id="new-bookmark" class="waves-effect waves-light btn"><i class="material-icons left">bookmark</i>bookmark</a>
+						</div>
+
+					</div>
+				</div>
+		</section>
+
+		<!-- js files -->
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/bootstrap.min.js"></script>
+		<script src="js/lib/materialize.min.js"></script>
+		<script src="js/lib/jquery.raty.js"></script>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

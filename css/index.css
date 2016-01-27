@@ -1,0 +1,115 @@
+/* CSS Reset using normalize*/
+
+body {
+	color: #56853B;
+}
+
+.total-stats {
+	border: 2px solid #56853B;
+	border-radius: 5px;
+	/*min-height: 2px;
+	overflow: hidden;*/
+	margin: 20px;
+	background: #DCEE65;
+	padding: 10px;
+}
+
+.logo {
+	font-size: 32px;
+}
+
+#total-books, #total-bookmarks {font-weight: 700}
+.bookmark-btn {
+	border: 1px solid #CCC;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 15px;
+	/*margin-left: 40px;*/
+}
+
+#bookmark-icon {
+	color: #ccc;
+}
+
+#book-desc {
+	padding: 30px;
+	font-size: 16px;
+}
+
+#book-title-list{
+	height: 350px;
+	overflow: auto;
+}
+
+#book-cover {
+	height: 200px;
+}
+.container {
+	width: 90%;
+}
+
+.book-img {
+	height: 32px;
+	width: 32px;
+}
+
+.book-title {
+	padding-left: 10px;
+}
+
+/*.btn {
+	background-color: #DCEE65;
+}*/
+/*.book-stats p{
+	display: inline-block;	
+
+}*/
+
+#book-title-list a {
+	cursor: pointer;
+}
+
+ span.badge.new:after {
+	content: '';
+}
+
+.title-header {
+	background-color: #56853B;
+	text-align: center;
+	font-weight: 700;
+	color: #fff; 
+}
+
+.nav-wrapper {
+	background-color: #56853B;
+}
+
+span.badge.new {
+	background-color: #56853B;
+	cursor: pointer;
+}
+
+.btn {
+	background-color: #56853B;	
+}
+
+.btn:hover, a:focus, a:hover {
+	background-color: #DCEE65;	
+}
+
+.collection a.collection-item {
+	color: #56853B;
+}
+
+nav a:focus, nav a:hover {
+	background-color: #56853B;
+	text-decoration: none;	
+}
+
+.sort-order {
+
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
